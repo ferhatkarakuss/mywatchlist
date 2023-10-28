@@ -34,9 +34,9 @@ const ResultCart = ({ movie }) => {
           </h4>
         </div>
 
-        <div className="controls h-20 w-10 mr-44 lg:w-auto lg:mr-0 lg:h-36 ">
+        <div className="controls h-12 w-[12px] mr-52 lg:w-auto lg:mr-0 lg:h-36 ">
           <button
-            className="btn"
+            className="btn "
             disabled={storedMovie}
             onClick={() => addMovieToWatchlist(movie)}
           >
