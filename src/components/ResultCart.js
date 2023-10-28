@@ -45,7 +45,7 @@ const ResultCart = ({ movie }) => {
             Add to Watchlist
           </button>
           <button
-            className="btn "
+            className="btn  "
             disabled={storedMovieWatched}
             onClick={() => addMovieToWatched(movie)}
           >

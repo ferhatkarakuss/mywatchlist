@@ -22,10 +22,10 @@ const Add = () => {
 
   return (
     <div className="add-page ">
-      <div className="container ">
-        <div className="add-content ">
+      <div className="  ">
+        <div className="add-content w-full lg:w-3/4  ">
           <img
-            className="h-3/4 "
+            className="h-3/4 w-full "
             src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/9ZyAUZrfccsjtDwYgc7yvOBnqM9.jpg"
           />
           <div className="titles text-lg  pb-20 left-5 right-5 lg:text-2xl">
