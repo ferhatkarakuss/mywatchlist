@@ -21,18 +21,23 @@ const Add = () => {
   }
 
   return (
-    <div className="add-page">
-      <div className="container">
-        <div className="add-content">
-          <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/9ZyAUZrfccsjtDwYgc7yvOBnqM9.jpg" />
-          <div className="titles">
-            <h2>
+    <div className="add-page ">
+      <div className="container ">
+        <div className="add-content ">
+          <img
+            className="h-3/4 "
+            src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/9ZyAUZrfccsjtDwYgc7yvOBnqM9.jpg"
+          />
+          <div className="titles text-lg  pb-20 left-5 right-5 lg:text-2xl">
+            <h2 className="">Welcome.</h2>
+            <h2 className="">
               Millions of movies, TV shows and people to discover. Explore
               now...
             </h2>
           </div>
           <div className="input-wrapper">
             <input
+              className="bg-gray-200 mb-24 "
               type="text"
               value={query}
               onChange={onChange}
@@ -43,7 +48,7 @@ const Add = () => {
           {results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (
-                <li key={movie.id}>
+                <li key={movie.id} className="lg:mb-12">
                   <ResultCart movie={movie} />
                 </li>
               ))}

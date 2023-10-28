@@ -10,10 +10,11 @@ const ResultCart = ({ movie }) => {
     ? true
     : !!storedMovieWatched;
   return (
-    <div className="result-card">
-      <div className="poster-wrapper">
+    <div className="result-card  h-20 ">
+      <div className="poster-wrapper ">
         {movie.poster_path ? (
           <img
+            className="h-24 w-20 lg:h-[150px] lg:w-[120px] "
             src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
             alt={`${movie.poster_path}`}
           />
@@ -23,17 +24,17 @@ const ResultCart = ({ movie }) => {
       </div>
 
       <div className="info">
-        <div className="header">
-          <h3 className="title">{movie.title}</h3>
-          <h4 className="release-date">
+        <div className="header ">
+          <h3 className="title text-[13px] lg:text-xl">{movie.title}</h3>
+          <h4 className="release-date text-[13px] lg:text-xl">
             {movie.release_date ? movie.release_date.substring(0, 4) : "-"}
           </h4>
-          <h4 className="release-date">
+          <h4 className="release-date text-[13px] lg:text-xl">
             IMDB: <b>{movie.vote_average ? movie.vote_average : "-"}</b>
           </h4>
         </div>
 
-        <div className="controls">
+        <div className="controls h-20 w-10 mr-44 lg:w-auto lg:mr-0 lg:h-36 ">
           <button
             className="btn"
             disabled={storedMovie}
