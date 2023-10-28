@@ -24,7 +24,7 @@ const ResultCart = ({ movie }) => {
       </div>
 
       <div className="info">
-        <div className="header pl-1">
+        <div className="header pl-1 lg:pl-4">
           <h3 className="title text-[13px] lg:text-xl first-letter:">
             {movie.title}
           </h3>
@@ -36,16 +36,16 @@ const ResultCart = ({ movie }) => {
           </h4>
         </div>
 
-        <div className="controls h-12 w-2 text-sm mr-24 pr-8 ml-auto lg:w-auto lg:mr-0 lg:h-36 ">
+        <div className="controls h-12 w-2 text-sm mr-24 pr-8 ml-auto lg:w-60 lg:mr-0 lg:h-36  ">
           <button
-            className="btn "
+            className="btn mr-1 lg:mr-4"
             disabled={storedMovie}
             onClick={() => addMovieToWatchlist(movie)}
           >
             Add to Watchlist
           </button>
           <button
-            className="btn"
+            className="btn "
             disabled={storedMovieWatched}
             onClick={() => addMovieToWatched(movie)}
           >
