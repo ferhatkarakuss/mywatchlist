@@ -24,17 +24,19 @@ const ResultCart = ({ movie }) => {
       </div>
 
       <div className="info">
-        <div className="header ">
-          <h3 className="title text-[13px] lg:text-xl">{movie.title}</h3>
-          <h4 className="release-date text-[13px] lg:text-xl">
+        <div className="header pl-1">
+          <h3 className="title text-[13px] lg:text-xl first-letter:">
+            {movie.title}
+          </h3>
+          <h4 className="release-date text-[13px] lg:text-xl font-bold">
             {movie.release_date ? movie.release_date.substring(0, 4) : "-"}
           </h4>
-          <h4 className="release-date text-[13px] lg:text-xl">
+          <h4 className="release-date text-[13px] lg:text-xl font-bold">
             IMDB: <b>{movie.vote_average ? movie.vote_average : "-"}</b>
           </h4>
         </div>
 
-        <div className="controls h-12 w-[12px] mr-52 lg:w-auto lg:mr-0 lg:h-36 ">
+        <div className="controls h-12 w-2 text-sm mr-24 pr-8 ml-auto lg:w-auto lg:mr-0 lg:h-36 ">
           <button
             className="btn "
             disabled={storedMovie}
